@@ -8,13 +8,13 @@ class Program
 {
     static void Main()
     {
-        bool result = isEven(5);
+        double result = Celsium(500);
         Console.WriteLine(result);
         
     }
 
-    static bool isEven(int number)
+    static double Celsium(double far)
     {
-        return number % 2 == 0;
+        return (far - 32) * 5 / 9;
     }
 }

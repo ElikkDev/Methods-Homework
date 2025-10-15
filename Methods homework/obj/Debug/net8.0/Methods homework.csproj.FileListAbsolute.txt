@@ -12,3 +12,4 @@ C:\Users\mursa\source\repos\Methods homework\Methods homework\obj\Debug\net8.0\r
 C:\Users\mursa\source\repos\Methods homework\Methods homework\obj\Debug\net8.0\Methods homework.pdb
 C:\Users\mursa\source\repos\Methods homework\Methods homework\obj\Debug\net8.0\Methods homework.genruntimeconfig.cache
 C:\Users\mursa\source\repos\Methods homework\Methods homework\obj\Debug\net8.0\ref\Methods homework.dll
+C:\Users\mursa\source\repos\Methods homework\Methods homework\obj\Debug\net8.0\Methods homework.sourcelink.json
