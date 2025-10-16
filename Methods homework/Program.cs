@@ -22,48 +22,83 @@ class Program
 
     #region Third task
 
+    //static void Main()
+    //{
+    //    int[] result = Dividor(12);
+
+    //    for (int i = 0; i < result.Length; i++)
+    //    {
+    //        Console.WriteLine(result[i]);
+    //    }
+
+    //}
+
+    //static int[] Dividor(int number)
+    //{
+    //    int count  = 0;
+    //    for (int i = 1; i <= number; i++)
+    //    {
+    //        if (number % i == 0)
+    //        {
+    //            count++;
+
+    //        }
+    //    }
+
+    //    int[] arr = new int[count];
+
+    //    int index = 0;
+
+    //    for (int i = 1; i <= number; i++)
+    //    {
+    //        if (number % i == 0)
+    //        {
+    //            arr[index] = i;
+    //            index++;
+    //        }
+    //    }
+
+    //    return arr;
+    //}
+    #endregion
+
+    #region fourth task
     static void Main()
     {
-        int[] result = Dividor(12);
 
-        for (int i = 0; i < result.Length; i++)
-        {
-            Console.WriteLine(result[i]);
-        }
-        
+        int answer = Factorial(5);
+        Console.WriteLine(answer);
+
     }
 
-    static int[] Dividor(int number)
+    static int Factorial(int number)
     {
-        int count  = 0;
-        for (int i = 1; i <= number; i++)
+       int number2 = 1;
+        if (number == 0)
         {
-            if (number % i == 0)
-            {
-                count++;
-
-            }
+            return 1;
         }
 
-        int[] arr = new int[count];
-
-        int index = 0;
-
-        for (int i = 1; i <= number; i++)
+        else if (number < 0)
         {
-            if (number % i == 0)
-            {
-                arr[index] = i;
-                index++;
-            }
+            return -1;
         }
 
-        return arr;
+        else
+        {
+            for (int i = 1; i <= number; i++)
+            {
+                number2 *= i;
+            }
+
+            return number2;
+        }
     }
-
-
-
     #endregion
+
+
+
+
 }
 
 
