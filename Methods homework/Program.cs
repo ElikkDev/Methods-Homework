@@ -130,31 +130,63 @@ class Program
     #endregion
 
     #region Six task
+    //static void Main()
+    //{
+    //    int[] numbers = { 2, 4, 5, 6 };
+    //    Average(numbers);
+    //}
+
+    //static void Average(int[] arr)
+    //{
+    //    int sum = 0;
+
+    //    for (int i = 0; i < arr.Length; i++)
+    //    {
+    //        sum += arr[i];
+    //    }
+
+    //    double average = (double)sum / arr.Length;
+    //    Console.WriteLine(average);
+
+    //}
+    #endregion
+
+    #region Seventh task
     static void Main()
     {
         int[] numbers = { 2, 4, 5, 6 };
-        Average(numbers);
+        PrimeNumbers(numbers);
     }
 
-    static void Average(int[] arr)
+    static void PrimeNumbers(int[] arr)
     {
-        int sum = 0;
+      
 
         for (int i = 0; i < arr.Length; i++)
         {
-            sum += arr[i];
+            int count = 0;
+
+            for (int j = 1; j <= arr[i]; j++)
+            {
+
+                if (arr[i] % j == 0)
+                {
+                    count++;
+                }
+            }
+
+            if(count == 2)
+            {
+                Console.WriteLine(arr[i]);
+            }
+
         }
 
-        double average = (double)sum / arr.Length;
-        Console.WriteLine(average);
+
 
     }
-
-
     #endregion
 
+
 }
-
-
-
 
