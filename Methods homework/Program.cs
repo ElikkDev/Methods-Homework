@@ -152,41 +152,85 @@ class Program
     #endregion
 
     #region Seventh task
-    static void Main()
-    {
-        int[] numbers = { 2, 4, 5, 6 };
-        PrimeNumbers(numbers);
-    }
+    //static void Main()
+    //{
+    //    int[] numbers = { 2, 4, 5, 6 };
+    //    PrimeNumbers(numbers);
+    //}
 
-    static void PrimeNumbers(int[] arr)
-    {
-      
-
-        for (int i = 0; i < arr.Length; i++)
-        {
-            int count = 0;
-
-            for (int j = 1; j <= arr[i]; j++)
-            {
-
-                if (arr[i] % j == 0)
-                {
-                    count++;
-                }
-            }
-
-            if(count == 2)
-            {
-                Console.WriteLine(arr[i]);
-            }
-
-        }
+    //static void PrimeNumbers(int[] arr)
+    //{
 
 
+    //    for (int i = 0; i < arr.Length; i++)
+    //    {
+    //        int count = 0;
 
-    }
+    //        for (int j = 1; j <= arr[i]; j++)
+    //        {
+
+    //            if (arr[i] % j == 0)
+    //            {
+    //                count++;
+    //            }
+    //        }
+
+    //        if(count == 2)
+    //        {
+    //            Console.WriteLine(arr[i]);
+    //        }
+
+    //    }
+
+    //}
     #endregion
 
+    #region Eight task
+    static void Main()
+    {
+        double result = Calculator(10,5,'+');
+        Console.WriteLine(result);
+    }
+
+    static double Calculator(double number1, double number2, char op)
+    {
+
+        double result = 0;
+
+        if (op == '+')
+        {
+            result = number1 + number2;
+        }
+
+        else if (op == '-')
+        {
+            result = number1 - number2;
+        }
+
+        else if (op == '*')
+        {
+            result = number1 * number2;
+        }
+
+        else if (op == '/')
+        {
+            if (number2 != 0)
+                result = number1 / number2;
+            else
+                Console.WriteLine();
+        }
+
+        else
+        {
+            Console.WriteLine("Wrong operator");
+        
+        }
+
+        return result;
+
+    }
+
+    #endregion
 
 }
 
