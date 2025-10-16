@@ -98,40 +98,60 @@ class Program
 
     #region Fifth task
 
+    //static void Main()
+    //{
+    //    bool result = isPrime(12);
+    //    Console.WriteLine(result);
+
+    //}
+
+    //static bool isPrime(int number)
+    //{
+    //    int count = 0;
+
+    //    for (int i  = 1; i <= number; i++)
+    //    {
+    //        if (number % i == 0)
+    //        {
+    //            count++;
+    //        }
+    //    }
+    //    if (count == 2)
+    //    {
+    //        return true; 
+    //    }
+    //    else
+    //    {
+    //        return false;
+    //    }
+
+
+    //}
+    #endregion
+
+    #region Six task
     static void Main()
     {
-        bool result = isPrime(12);
-        Console.WriteLine(result);
-
+        int[] numbers = { 2, 4, 5, 6 };
+        Average(numbers);
     }
 
-    static bool isPrime(int number)
+    static void Average(int[] arr)
     {
-        int count = 0;
+        int sum = 0;
 
-        for (int i  = 1; i <= number; i++)
+        for (int i = 0; i < arr.Length; i++)
         {
-            if (number % i == 0)
-            {
-                count++;
-            }
+            sum += arr[i];
         }
-        if (count == 2)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-        
-        
+
+        double average = (double)sum / arr.Length;
+        Console.WriteLine(average);
+
     }
 
 
     #endregion
-
-
 
 }
 

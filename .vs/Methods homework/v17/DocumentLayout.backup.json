@@ -14,12 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,10 +24,14 @@
               "RelativeDocumentMoniker": "Methods homework\\Program.cs",
               "ToolTip": "C:\\Users\\mursa\\source\\repos\\Methods homework\\Methods homework\\Program.cs*",
               "RelativeToolTip": "Methods homework\\Program.cs*",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAcwGYAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAcwIcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-15T22:55:28.136Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             }
           ]
         }
